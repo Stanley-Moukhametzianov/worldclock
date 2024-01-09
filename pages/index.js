@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 
 import Script from 'next/script';
 import Clock from '../components/clocks'
+import Head from 'next/head'
 
 
 
@@ -448,6 +449,16 @@ export default function Home() {
   return (
    <>
    
+      <Head>
+        <script strategy="beforeInteractive" src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script>
+<script strategy="beforeInteractive" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script strategy="beforeInteractive" src='https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.20/topojson.min.js'></script>
+<script strategy="beforeInteractive" src='https://cdnjs.cloudflare.com/ajax/libs/d3-geo-projection/0.2.16/d3.geo.projection.min.js'></script>
+<script strategy="beforeInteractive" src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js'></script>
+<script strategy="beforeInteractive" src='https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.1/moment-timezone.min.js'></script>
+<script strategy="beforeInteractive" src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/suncalc.js'></script>
+<script strategy="beforeInteractive"  src="./script.js"></script>
+      </Head>
 
 
 
@@ -501,13 +512,7 @@ export default function Home() {
 
        
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.20/topojson.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/d3-geo-projection/0.2.16/d3.geo.projection.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.1/moment-timezone.min.js'></script>
-<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/suncalc.js'></script><script  src="./script.js"></script>
+
 
 
 
